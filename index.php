@@ -12,11 +12,11 @@
 <body>
 	<div id="main">
 		
-		<header>
+		<section id="header">
 			<div id="logo">
 				<img src="img/logo.png">
 			</div>
-		</header>
+		</section>
 
 		<section class="cream1">
 			<div>
@@ -25,7 +25,7 @@
 					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
 					<source src="video/video.ogv" type="video/ogg">
-					<source src="video/video.3gp" type="video/3gp"/>
+					<source src="video/video.3gp" type="video/3gp">
 					Your browser does not support the video tag.
 				</video>
 			</div>
@@ -36,7 +36,7 @@
 			</div>
 			<div id="tips1">
 				<p>Did this video answer your questions?</p>
-				<div>✔</div>
+				<div class="tick">✔</div>
 			</div>
 		</section>
 
@@ -45,57 +45,102 @@
 			
 			<h3>How does <span>D</span>ART work?</h3>
 			<p>You are now convinced that DART can be a very precious partner in your daily activities. Want to see what it is like and how easy it is to start working with it? The following demos will show you 7 practical use cases (1mn30 each).</p>
+			<article class="vignette">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
+					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
+				</video>
+				<div class="details">
+					<h4>part 1</h4>
+					<h5>Primary document</h5>
+				</div>
+			</article>
 			
-			<video width="100%" controls="controls" poster="img/poster.png">
-				<source src="video/video.mp4" type="video/mp4">
-			</video>
-			
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 2</h4>
-				<h5>Multiple search</h5>
+				<div class="details">
+					<h4>part 2</h4>
+					<h5>Multiple search</h5>
+				</div>
 			</article>
 
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 3</h4>
-				<h5>Primary document</h5>
+				<div class="details">
+					<h4>part 3</h4>
+					<h5>Primary document</h5>
+				</div>
 			</article>
 
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 4</h4>
-				<h5>Multiple search</h5>
+				<div class="details">
+					<h4>part 4</h4>
+					<h5>Multiple search</h5>
+				</div>
 			</article>
 
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 5</h4>
-				<h5>Primary document</h5>
+				<div class="details">
+					<h4>part 5</h4>
+					<h5>Primary document</h5>
+				</div>
 			</article>
 
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 6</h4>
-				<h5>Multiple search</h5>
+				<div class="details">
+					<h4>part 6</h4>
+					<h5>Multiple search</h5>
+				</div>
 			</article>
 
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 7</h4>
-				<h5>Primary document</h5>
+				<div class="details">
+					<h4>part 7</h4>
+					<h5>Primary document</h5>
+				</div>
 			</article>
 
 			<div id="tips2">
@@ -111,28 +156,46 @@
 			<p>Before going further and getting your <span>D</span>ART access rights, there are a few concepts we want you to know.The main DART concepts are illustrated in these 3 short videos (1mn30 each).</p>
 			
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 1</h4>
-				<h5>Primary document and document workflow</h5>
-				<p>This video comes across the concept of document workflow. In <span>D</span>ART, the document workflow is a key functionality to the system.</p>
+				<div class="details">
+					<h4>part 1</h4>
+					<h5>Primary document and document workflow</h5>
+					<p>This video comes across the concept of document workflow. In <span>D</span>ART, the document workflow is a key functionality to the system.</p>
+				</div>
 			</article>
 
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 2</h4>
-				<h5>Multiple search</h5>
+				<div class="details">
+					<h4>part 2</h4>
+					<h5>Multiple search</h5>
+				</div>
 			</article>
 
 			<article class="vignette">
-				<video width="100%" controls="controls" poster="img/poster.png">
+				<video width="100%" controls="controls">
+					<source src="video/video.webm" type="video/webm">
 					<source src="video/video.mp4" type="video/mp4">
+					<source src="video/video.ogv" type="video/ogg">
+					<source src="video/video.3gp" type="video/3gp">
+					Your browser does not support the video tag.
 				</video>
-				<h4>part 3</h4>
-				<h5>Multiple search</h5>
+				<div class="details">
+					<h4>part 3</h4>
+					<h5>Multiple search</h5>
+				</div>
 			</article>
 		</section>
 		
@@ -238,7 +301,7 @@
 					</label>
 				</div>
 
-				<div>
+				<div id="button">
 					<input type="submit" value="Save my answers">
 				</div>
 			</form>
