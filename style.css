@@ -1,0 +1,194 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	/*border: 1px red solid;*/
+}
+
+#main {
+	width: 100%;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+/*---------------------- titles & typo & span ------------------------*/
+
+p {
+	padding-bottom: 10px; 
+}
+
+h2 {
+	text-transform : uppercase;
+	letter-spacing: 3px;
+	font-size: 1em;
+	padding-bottom: 10px;
+	margin-bottom: 13px;
+}
+
+h3{
+	text-transform : capitalize;
+	margin: 15px 0px 15px 0px;
+	font-size: 1.3em;
+}
+
+h4 {
+	text-transform : uppercase;
+	color: #EE4236;
+	margin-bottom: 15px;
+}
+
+h5 {
+	text-transform : capitalize;
+	color: #7D7768;
+	font-size: 1.5em;
+}
+
+span {
+	font-weight: bolder;
+}
+
+/*-------------------- sections ----------------------*/
+
+section {
+	padding: 0px 30px; 
+}
+
+#header img {
+	width: 100%;
+}
+
+.cream1 {
+	background-color: #F2F0EB;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+.cream1 h2 {
+	color: #7D7768;
+	border-bottom: 2px solid #7D7768;
+}
+
+.cream1 h3 {
+	color: #7D7768;
+}
+
+.cream2 {
+	background-color: #F2F0EB;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+.cream2 h2 {
+	color: #D0021B;
+	border-bottom: 2px solid #D0021B;
+}
+
+.cream2 h3 {
+	color: #D0021B;
+}
+
+.grey {
+	background-color: #969186;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+.grey h2, h3 {
+	color: white;
+}
+
+.grey h2 {
+	border-bottom: 1px solid white;
+}
+
+.red {
+	background-color: #D0021B;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+/*--------------------- articles ----------------------*/
+
+article {
+	background-color: white;
+	margin: 25px 0px;	
+}
+
+.details {
+ padding: 15px 0px 15px 15px;
+}
+
+.details p {
+	margin-top: 15px;
+}
+
+/*------------------ checked bars ------------------*/
+
+#tips1 {
+	background-color: #FBFAF8;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 95%;
+}
+
+#tips1 p{
+	display: inline-block;
+	padding: 20px 15px;
+}
+
+#tips1 div{
+	display: inline-block;
+	background-color: #6BC200;
+	color: white;
+	width: 32px;
+	height: 30px;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	padding-top: 2px;
+}
+
+#tips2 {
+	background-color: #C2BFB8;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 95%;
+}
+
+#tips2 p{
+	display: inline-block;
+	padding: 20px 15px;
+}
+
+#tips2 div{
+	display: inline-block;
+	background-color: #6BC200;
+	color: white;
+	width: 32px;
+	height: 30px;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	padding-top: 2px;
+}
+
+/*--------------- form ---------------*/
+
+form p {
+	font-weight: bolder;
+}
+
+form div{
+	margin-bottom: 20px;
+}
+
+form [type=submit]{
+	width: 50%;
+	height: 30px;
+	color: white;
+	background-color: #D0021B;
+	border-radius: 10px;
+}
