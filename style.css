@@ -22,24 +22,28 @@ h2 {
 	font-size: 1em;
 	padding-bottom: 10px;
 	margin-bottom: 13px;
+	font-weight: 600;
 }
 
 h3{
 	text-transform : capitalize;
 	margin: 15px 0px 15px 0px;
-	font-size: 1.3em;
+	font-size: 1.4em;
+	font-weight: 400;
 }
 
 h4 {
 	text-transform : uppercase;
 	color: #EE4236;
 	margin-bottom: 15px;
+	font-size: 0.8em;
 }
 
 h5 {
 	text-transform : capitalize;
 	color: #7D7768;
-	font-size: 1.5em;
+	font-size: 1.2em;
+	font-weight: 400;
 }
 
 span {
@@ -104,8 +108,30 @@ section {
 	background-color: #D0021B;
 	color: white;
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px; 
+	padding-top: 25px;
+	padding-bottom: 25px; 
+}
+
+/*------------ triangles end of sections ------------*/
+
+#triangle1 {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 20px solid #F2F0EB;
+	margin: auto;
+	margin-top: -21px;
+}
+
+#triangle2 {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 20px solid #D0021B;
+	margin: auto;
+	margin-top: -21px;
 }
 
 /*--------------------- articles ----------------------*/
@@ -191,4 +217,75 @@ form [type=submit]{
 	color: white;
 	background-color: #D0021B;
 	border-radius: 10px;
+}
+
+/*------------ media queries ----------*/
+
+@media all and (min-width: 790px) {
+
+	#main {
+		width: 80%;
+	}
+
+	#header img {
+		width: 30%;
+	}
+
+	#tips1 {
+		clear: both;
+		margin-bottom: 0px;
+	}
+	
+	#tips2 {
+		clear: both;
+		margin-bottom: 0px;
+	}
+
+	#demo_video {
+		width: 48%;
+		float: left;
+		margin: auto;
+		margin-bottom: 25px;
+	}
+
+	#demo_text {
+		width: 48%;
+		display: inline-block;
+		float: right;
+		padding-top: 25px;
+	}
+
+
+	.container {
+		width: 100%;
+	}
+
+	#n2{float:left;width:30%;margin:0px;}
+	#n3{float:right;width:30%;margin:0px;}
+	#n4{margin:0 auto;width:30%;}
+
+	#n5{float:left;width:30%;margin:0px;}
+	#n6{float:right;width:30%;margin:0px;}
+	#n7{margin:0 auto;width:30%;margin-top: 20px;}
+	
+	#n9_10{background-color:#F2F0EB;}
+	#n9{width: 48%;float: left;}
+	#n10{width:48%;float:right;}
+
+	.red{
+		clear: both;
+	}
+}
+
+@media all and (min-width: 1200px) {
+
+	#n8{width: 70%;float:left;}
+	#n9_10{width:30%;float:right;}
+
+	#n9{width:95%;float: inherit;margin-bottom: 13px;}
+	#n10{width:95%;float:inherit;}
+	
+	.red{
+		clear: both;
+	}
 }
