@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -234,100 +235,120 @@
 			
 			<h3><span>D</span>ART roundup</h3>
 
-			<form action="#" method="post">
+			<form action="index.php#triangle2" method="post">
+
+				<?php 
+					isset($_POST['question1']) ? $q1 = $_POST['question1'] : $q1="";
+					isset($_POST['question2']) ? $q2 = $_POST['question2'] : $q2="";
+					isset($_POST['question3']) ? $q3 = $_POST['question3'] : $q3="";
+					isset($_POST['question4']) ? $q4 = $_POST['question4'] : $q4="";
+					isset($_POST['question5']) ? $q5 = $_POST['question5'] : $q5="";
+					isset($_POST['question6']) ? $q6 = $_POST['question6'] : $q6="";
+					isset($_POST['question7']) ? $q7 = $_POST['question7'] : $q7="";
+				?>
+
 				<div>
 					<p>What is DART?</p>
-					<label for="answer1"> 
-						<input type="radio" name="question1" id="answer1" value="option1"> answer 1 
+					<label for="q1a1" <?php if ($q1 == "option1"){echo "style='text-decoration: line-through; color:red'";} ?> >
+						<input type="radio" name="question1" id="q1a1" value="option1" <?php if ($q1 == "option1"){echo "checked='checked'";} ?> > DART is an application for Regulatory Managers only.
 					</label>
-					<label for="answer2"> 
-						<input type="radio" name="question1" id="answer2" value="option2"> answer 2 
+					<label for="q1a2" <?php if ($q1 == "option1" || $q1 =="option2" || $q1 =="option3"){echo "style='color:green; font-weight:bold'";} ?> > 
+						<input type="radio" name="question1" id="q1a2" value="option2" <?php if ($q1 == "option2"){echo "checked='checked'";} ?> > DART stands for Document Archiving and Retrieval Tool.
 					</label>
-					<label for="answer3"> 
-						<input type="radio" name="question1" id="answer3" value="option3"> answer 3 
+					<label for="q1a3" <?php if ($q1 == "option3"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question1" id="q1a3" value="option3" <?php if ($q1 == "option3"){echo "checked='checked'";} ?> > DART is an application for Research and Development colleagues only.
 					</label>
 				</div>
 					
 				<div>
 					<p>Which documents can I find in DART?</p>
-					<label for="answer1"> 
-						<input type="radio" name="question2" id="answer1" value="option1"> answer 1 
+					<label for="q2a1" <?php if ($q2 == "option1"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question2" id="q2a1" value="option1" <?php if ($q2 == "option1"){echo "checked='checked'";} ?> > Locally performed study reports are not included in DART.
 					</label>
-					<label for="answer2"> 
-						<input type="radio" name="question2" id="answer2" value="option2"> answer 2 
+					<label for="q2a2" <?php if ($q2 == "option2"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question2" id="q2a2" value="option2" <?php if ($q2 == "option2"){echo "checked='checked'";} ?> > Product registration dossiers are archived in DART.
 					</label>
-					<label for="answer3"> 
-						<input type="radio" name="question2" id="answer3" value="option3"> answer 3 
+					<label for="q2a3" <?php if ($q2 == "option1" || $q2 =="option2" || $q2 =="option3"){echo "style='color:green; font-weight:bold'";} ?> > 
+						<input type="radio" name="question2" id="q2a3" value="option3" <?php if ($q2 == "option3"){echo "checked='checked'";} ?> > Three document types that you can find in DART are: specifications, safety
+						data sheets, study reports.  
 					</label>
 				</div>
 
 				<div>
 					<p>What is the purpose of DART?</p>
-					<label for="answer1"> 
-						<input type="radio" name="question3" id="answer1" value="option1"> answer 1 
+					<label for="q3a1" <?php if ($q3 == "option1"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question3" id="q3a1" value="option1" <?php if ($q3 == "option1"){echo "checked='checked'";} ?> > Facilitate and speed up competitor analysis.
 					</label>
-					<label for="answer2"> 
-						<input type="radio" name="question3" id="answer2" value="option2"> answer 2 
+					<label for="q3a2" <?php if ($q3 == "option1" || $q3 =="option2" || $q3 =="option3"){echo "style='color:green; font-weight:bold'";} ?> > 
+						<input type="radio" name="question3" id="q3a2" value="option2" <?php if ($q3 == "option2"){echo "checked='checked'";} ?> > Have the complete overview of scientific results and assessments
+						documented in one central place.  
 					</label>
-					<label for="answer3"> 
-						<input type="radio" name="question3" id="answer3" value="option3"> answer 3 
+					<label for="q3a3" <?php if ($q3 == "option3"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question3" id="q3a3" value="option3" <?php if ($q3 == "option3"){echo "checked='checked'";} ?> > Track all product registration processes world wide in one central place.
 					</label>
 				</div>
 
 				<div>
 					<p>What is the interpretation of a DART number?</p>
-					<label for="answer1"> 
-						<input type="radio" name="question4" id="answer1" value="option1"> answer 1 
+					<label for="q4a1" <?php if ($q4 == "option1" || $q4 =="option2" || $q4 =="option3"){echo "style='color:green; font-weight:bold'";} ?> > 
+						<input type="radio" name="question4" id="q4a1" value="option1" <?php if ($q4 == "option1"){echo "checked='checked'";} ?> > The term “DART number” is an alias for the term “Edition Number”. 
 					</label>
-					<label for="answer2"> 
-						<input type="radio" name="question4" id="answer2" value="option2"> answer 2 
+					<label for="q4a2" <?php if ($q4 == "option2"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question4" id="q4a2" value="option2" <?php if ($q4 == "option2"){echo "checked='checked'";} ?> > If the last digit of the Edition Number is 1, it means that this document is in
+						English language.
 					</label>
-					<label for="answer3"> 
-						<input type="radio" name="question4" id="answer3" value="option3"> answer 3 
+					<label for="q4a3" <?php if ($q4 == "option3"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question4" id="q4a3" value="option3" <?php if ($q4 == "option3"){echo "checked='checked'";} ?> > M-288690 is a valid Edition Number.
 					</label>
 				</div>
 
 				<div>
 					<p>Talking about the search for a document by Edition Number, which of the following statements are true?</p>
-					<label for="answer1"> 
-						<input type="radio" name="question5" id="answer1" value="option1"> answer 1 
+					<label for="q5a1" <?php if ($q5 == "option1"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question5" id="q5a1" value="option1" <?php if ($q5 == "option1"){echo "checked='checked'";} ?> > Setting the field “Type” to “Edition Number” is mandatory.
 					</label>
-					<label for="answer2"> 
-						<input type="radio" name="question5" id="answer2" value="option2"> answer 2 
+					<label for="q5a2" <?php if ($q5 == "option2"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question5" id="q5a2" value="option2" <?php if ($q5 == "option2"){echo "checked='checked'";} ?> > Searching for an Edition Number automatically shows me the latest version of
+						the corresponding document.
 					</label>
-					<label for="answer3"> 
-						<input type="radio" name="question5" id="answer3" value="option3"> answer 3 
+					<label for="q5a3" <?php if ($q5 == "option1" || $q5 =="option2" || $q5 =="option3"){echo "style='color:green; font-weight:bold'";} ?> > 
+						<input type="radio" name="question5" id="q5a3" value="option3" <?php if ($q5 == "option3"){echo "checked='checked'";} ?> > If I enter an Edition Number without using the symbol (*) I have to enter all
+						letters and digits. 
 					</label>
 				</div>
 
 				<div>
 					<p>How can I open the archived document?</p>
-					<label for="answer1"> 
-						<input type="radio" name="question6" id="answer1" value="option1"> answer 1 
+					<label for="q6a1" <?php if ($q6 == "option1" || $q6 =="option2" || $q6 =="option3"){echo "style='color:green; font-weight:bold'";} ?> > 
+						<input type="radio" name="question6" id="q6a1" value="option1" <?php if ($q6 == "option1"){echo "checked='checked'";} ?> > From the search result view I have to select the respective line until it
+						appears highlighted in grey. Then I open the context menu with a right mouse click and select “Open PDF…”.
 					</label>
-					<label for="answer2"> 
-						<input type="radio" name="question6" id="answer2" value="option2"> answer 2 
+					<label for="q6a2" <?php if ($q6 == "option2"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question6" id="q6a2" value="option2" <?php if ($q6 == "option2"){echo "checked='checked'";} ?> > Just double click any line from the result list.
 					</label>
-					<label for="answer3"> 
-						<input type="radio" name="question6" id="answer3" value="option3"> answer 3 
+					<label for="q6a3" <?php if ($q6 == "option3"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question6" id="q6a3" value="option3" <?php if ($q6 == "option3"){echo "checked='checked'";} ?> > Just click on the “Open Document” icon in the icon bar and enter the Edition
+						Number in the dialogue window.
 					</label>
 				</div>
 
 				<div>
 					<p>What do the three columns in front of the query result mean?</p>
-					<label for="answer1"> 
-						<input type="radio" name="question7" id="answer1" value="option1"> answer 1 
+					<label for="q7a1" <?php if ($q7 == "option1"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question7" id="q7a1" value="option1" <?php if ($q7 == "option1"){echo "checked='checked'";} ?> > The column “quality” classifies the data quality of the document.
 					</label>
-					<label for="answer2"> 
-						<input type="radio" name="question7" id="answer2" value="option2"> answer 2 
+					<label for="q7a2" <?php if ($q7 == "option2"){echo "style='text-decoration: line-through; color:red'";} ?> > 
+						<input type="radio" name="question7" id="q7a2" value="option2" <?php if ($q7 == "option2"){echo "checked='checked'";} ?> > The colors codes red, yellow, green indicate the current status of ongoing
+						product registration requests.
 					</label>
-					<label for="answer3"> 
-						<input type="radio" name="question7" id="answer3" value="option3"> answer 3 
+					<label for="q7a3" <?php if ($q7 == "option1" || $q7 =="option2" || $q7 =="option3"){echo "style='color:green; font-weight:bold'";} ?> > 
+						<input type="radio" name="question7" id="q7a3" value="option3" <?php if ($q7 == "option3"){echo "checked='checked'";} ?> > The three columns permit a quick orientation if a document can be used in an
+						external registration process.
 					</label>
 				</div>
 
 				<div id="button">
-					<input type="submit" value="Save my answers">
+					<input type="submit" value="Save my answers" >
 				</div>
 			</form>
 		</section>
